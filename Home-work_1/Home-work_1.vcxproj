@@ -129,7 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Task1.cpp" />
     <ClCompile Include="Task2.cpp" />
-    <ClCompile Include="Task3cpp.cpp" />
+    <ClCompile Include="Task3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Library.h" />
