@@ -40,36 +40,36 @@ void Counter(FILE* f1, int arr[])
 	arr[1]++;
 }
 
-//int main()
-//{
-//	FILE* f1, * f2;
-//
-//	f1 = fopen("D:\\temp\\file.txt", "r");
-//	f2 = fopen("D:\\temp\\file2.txt", "w");
-//
-//	if (f1 == NULL || f2 == NULL)
-//	{
-//		return -1;
-//	}
-//	int arr[5];
-//	InitArr(arr);
-//	Counter(f1, arr);
-//	for (int i = 0; i < 5; i++)
-//	{
-//		cout << arr[i] << endl;
-//	}
-//
-//	fprintf(f2, "%i", arr[0]);
-//	fprintf(f2, "%c", '\n');
-//	fprintf(f2, "%i", arr[1]);
-//	fprintf(f2, "%c", '\n');
-//	fprintf(f2, "%i", arr[2]);
-//	fprintf(f2, "%c", '\n');
-//	fprintf(f2, "%i", arr[3]);
-//	fprintf(f2, "%c", '\n');
-//	fprintf(f2, "%i", arr[4]);
-//	fprintf(f2, "%c", '\n');
-//
-//	fclose(f1);
-//	fclose(f2);
-//}
+int main()
+{
+	FILE* f1, * f2;
+
+	f1 = fopen("D:\\temp\\file.txt", "r");
+	f2 = fopen("D:\\temp\\file2.txt", "w");
+
+	if (f1 == NULL || f2 == NULL)
+	{
+		return -1;
+	}
+	int arr[5];
+	InitArr(arr);
+	Counter(f1, arr);
+	for (int i = 0; i < 5; i++)
+	{
+		cout << arr[i] << endl;
+	}
+
+	fprintf(f2, "%i", arr[0]);
+	fprintf(f2, "%c", '\n');
+	fprintf(f2, "%i", arr[1]);
+	fprintf(f2, "%c", '\n');
+	fprintf(f2, "%i", arr[2]);
+	fprintf(f2, "%c", '\n');
+	fprintf(f2, "%i", arr[3]);
+	fprintf(f2, "%c", '\n');
+	fprintf(f2, "%i", arr[4]);
+	fprintf(f2, "%c", '\n');
+
+	fclose(f1);
+	fclose(f2);
+}
